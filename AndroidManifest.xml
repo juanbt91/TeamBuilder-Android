@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jonahwitcig.team"
+    android:versionCode="11"
+    android:versionName="2.2" >
+
+    <uses-sdk android:minSdkVersion="8" />
+<supports-screen
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+    <application
+        android:icon="@drawable/ic_launcher">
+        <activity android:name="SelectionType" android:label="Team Builder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="CorrectedActivity"
+            android:label="Team Builder - Skill Based"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name="baseballActivity"
+            android:label="Team Builder - Sports - Baseball">
+        </activity>
+        <activity
+            android:name="basketballActivity"
+            android:label="Team Builder - Sports - Basketball">
+        </activity>
+        <activity
+            android:name="footballActivity"
+            android:label="Team Builder - Sports - Football">
+        </activity>
+        <activity
+            android:name="lacrosseActivity"
+            android:label="Team Builder - Sports - Lacrosse">
+        </activity>
+        <activity
+            android:name="SportActivity"
+            android:label="Team Builder - Sports">
+        </activity>
+        <activity
+            android:name="Options"
+            android:label="Team Builder - Options">
+        </activity>
+        <activity 
+            android:name="PlayersRandom"
+            android:label="Team Builder - Random"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="SoccerActivity"
+            android:label="Team Builder - Sports- Soccer">
+        </activity>
+        <activity
+            android:name="CustomSportActivity"
+            android:label="Team Builder - Sports - Custom Sports"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+    </application>
+
+</manifest>
